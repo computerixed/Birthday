@@ -1,14 +1,4 @@
 
-Config = {
-  "apiKey": "AIzaSyBO6vI1RPI-dMF89LSvvc4zlahqlwWUCEQ",
-  "authDomain": "christmas-f727d.firebaseapp.com",
-  "projectId": "christmas-f727d",
-  "storageBucket": "christmas-f727d.appspot.com",
-  "messagingSenderId": "419346374485",
-  "appId": "1:419346374485:web:c639ca9e7fa031bd2659dc",
-  "measurementId": "G-E9NQNFFV2L"
-}
-
 from flask import Flask, render_template, request, redirect, url_for, flash
 
 from werkzeug.utils import secure_filename
