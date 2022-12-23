@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Celebration</title>
+  <link rel="stylesheet" href="static/christmas.css">
+
+</head>
+<body>
+    <div class="nar">
+          <div class="logo">
+            <img style="width:90px;"src="/static/jmax.png">
+          </div>
+          <div class="welcome">
+            <marquee direction="right" class="marquee">
+              <h1 class="marqueeh1"> {{ name }} WISHES YOU A MERRY CHRISTMAS<span style="color:green; margin-left:50px;">AND A HAPPY NEW YEAR</span></h1>
+            </marquee>
+          </div>
+    </div>
+
+    <div class="body-section">
+        <div class="msg">
+          <div class="word">
+              <div class="myword">
+                <h4><b>Over the year I have come to realise that God used a 
+                good <br>number of individual to both bless and influence my life positively.</b></h4>
+                <h3><b>I have taking stock, counted my blessings<br>and now I must name them one by one by saying</b></h3>
+                <h2>THANK YOU FOR BEING A PART OF MY LIFE IN 2022</h2>
+                <h2>MERRY CHRISTMAS & HAPPY NEW YEAR IN ADVANCE</h2>
+                <h4>YOU CAN ENTER YOUR NAME BELOW TO SEND TO YOUR LOVED ONES ALSO</h4>
+                <small><b>MUCH LOVE FROM THIS END</small><br>
+                <author class="sender"><b>Yours {{ name }}</b></small>
+              </div>
+              <div class="firstimg" >
+                <img class="mainfirstimg" src="/static/thisChristmas.png">
+              </div>
+          </div>
+        </div>
+        <hr>
+        <div class="image">
+          <div>
+            <img class="mas" src="/static/mas.png">
+          
+          </div>
+          <div>
+            <img class="bg4" src="/static/bg4.png">
+            
+          </div>
+        </div>
+        <form action="{{ url_for('mainwork') }}" method="POST">
+          <input class="input" type="text" placeholder="ENTER YOUR NAME HERE" name="name" required>
+          <input class="in" type="text" placeholder="YOUR LOVED ONE NUMBER.." name="phone" required>   
+          <input class="submit" type="submit" name="submit">
+        </form>
+      <div>    
+          <a href="https://api.whatsapp.com/send?phone={{ phone }} &text='Hi dear, see what {{ name }} has for you
+          https://Christmas.firebase.com?name={{ name }}'"><img class="wat" src="/static/whatsap.png"></a>
+          <a class="share">CLICK TO SHARE WITH LOVED ONES</a> 
+        </div> 
+    <div>
+      <hr>
+      <marquee direction="left" class="marquee-last">Thanks You can contact us @ JMAX- using <b>07069452279</b> for your designs, programming, website development and Data analysis Job.</marquee>
+      </div>
+  </body>
+</html>          
+           
